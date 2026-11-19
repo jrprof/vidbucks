@@ -295,3 +295,8 @@ No downloading other channels' videos, no Google Images scraping, only CC0/CC BY
   styles). Lessons: the countdown's list title was overwritten by the last entry's title (one variable name for both) -
   check the drafted edit.json, not only the render; a title card that holds 2.4 s on a dark ground read as "black / frozen"
   to the gate, so it now has a drifting light and a push; a spoken "Number three:" duplicates the rank on screen.
+
+## 2026-11-19 - cloud sandbox: proxy, browser, stock
+- Remotion's Chrome download (remotion.media) can be blocked: set REMOTION_BROWSER_EXECUTABLE to an installed chrome-headless-shell (remotion.config.ts reads it). Google Fonts then need the proxy CA in ~/.pki/nssdb (certutil).
+- Node fetch ignores HTTPS_PROXY: run fetch-stock.mjs with NODE_USE_ENV_PROXY=1 NODE_EXTRA_CA_CERTS=<bundle>. Wikimedia API may answer 429 from shared egress; Openverse search + a direct upload.wikimedia.org thumb URL with a descriptive User-Agent works.
+- Stickman explainers fail the "life" gate when the camera is static: give each scene its own eased push toward its subject (keep the ground inside the camera layer, keep icons/captions in screen space).
