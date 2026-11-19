@@ -1,0 +1,434 @@
+[
+ {
+  "w": "You",
+  "start": 0.226,
+  "end": 0.646,
+  "line": 0
+ },
+ {
+  "w": "died",
+  "start": 0.646,
+  "end": 0.986,
+  "line": 0
+ },
+ {
+  "w": "a",
+  "start": 0.986,
+  "end": 1.206,
+  "line": 0
+ },
+ {
+  "w": "minute",
+  "start": 1.206,
+  "end": 1.306,
+  "line": 0
+ },
+ {
+  "w": "ago.",
+  "start": 1.306,
+  "end": 1.666,
+  "line": 0
+ },
+ {
+  "w": "and",
+  "start": 1.934,
+  "end": 2.294,
+  "line": 1
+ },
+ {
+  "w": "two",
+  "start": 2.294,
+  "end": 2.474,
+  "line": 1
+ },
+ {
+  "w": "escorts",
+  "start": 2.474,
+  "end": 2.954,
+  "line": 1
+ },
+ {
+  "w": "are",
+  "start": 2.954,
+  "end": 3.174,
+  "line": 1
+ },
+ {
+  "w": "already",
+  "start": 3.174,
+  "end": 3.574,
+  "line": 1
+ },
+ {
+  "w": "at",
+  "start": 3.574,
+  "end": 3.774,
+  "line": 1
+ },
+ {
+  "w": "your",
+  "start": 3.774,
+  "end": 3.914,
+  "line": 1
+ },
+ {
+  "w": "door.",
+  "start": 3.914,
+  "end": 4.174,
+  "line": 1
+ },
+ {
+  "w": "One",
+  "start": 4.259,
+  "end": 4.699,
+  "line": 2
+ },
+ {
+  "w": "in",
+  "start": 4.699,
+  "end": 4.839,
+  "line": 2
+ },
+ {
+  "w": "white,",
+  "start": 4.839,
+  "end": 5.059,
+  "line": 2
+ },
+ {
+  "w": "one",
+  "start": 5.279,
+  "end": 5.379,
+  "line": 2
+ },
+ {
+  "w": "in",
+  "start": 5.379,
+  "end": 5.539,
+  "line": 2
+ },
+ {
+  "w": "black,",
+  "start": 5.539,
+  "end": 5.839,
+  "line": 2
+ },
+ {
+  "w": "holding",
+  "start": 5.979,
+  "end": 6.259,
+  "line": 2
+ },
+ {
+  "w": "a",
+  "start": 6.259,
+  "end": 6.459,
+  "line": 2
+ },
+ {
+  "w": "chain.",
+  "start": 6.459,
+  "end": 6.779,
+  "line": 2
+ },
+ {
+  "w": "Forget",
+  "start": 6.898,
+  "end": 7.438,
+  "line": 3
+ },
+ {
+  "w": "the",
+  "start": 7.438,
+  "end": 7.678,
+  "line": 3
+ },
+ {
+  "w": "lake",
+  "start": 7.678,
+  "end": 7.918,
+  "line": 3
+ },
+ {
+  "w": "of",
+  "start": 7.918,
+  "end": 8.098,
+  "line": 3
+ },
+ {
+  "w": "fire.",
+  "start": 8.098,
+  "end": 8.478,
+  "line": 3
+ },
+ {
+  "w": "Chinese",
+  "start": 8.579,
+  "end": 9.119,
+  "line": 4
+ },
+ {
+  "w": "Hell",
+  "start": 9.119,
+  "end": 9.559,
+  "line": 4
+ },
+ {
+  "w": "is",
+  "start": 9.559,
+  "end": 9.799,
+  "line": 4
+ },
+ {
+  "w": "a",
+  "start": 9.799,
+  "end": 9.919,
+  "line": 4
+ },
+ {
+  "w": "government",
+  "start": 9.919,
+  "end": 10.239,
+  "line": 4
+ },
+ {
+  "w": "office.",
+  "start": 10.239,
+  "end": 10.679,
+  "line": 4
+ },
+ {
+  "w": "10",
+  "start": 10.755,
+  "end": 11.215,
+  "line": 5
+ },
+ {
+  "w": "courts,",
+  "start": 11.215,
+  "end": 11.515,
+  "line": 5
+ },
+ {
+  "w": "18",
+  "start": 11.755,
+  "end": 12.015,
+  "line": 5
+ },
+ {
+  "w": "floors.",
+  "start": 12.015,
+  "end": 12.515,
+  "line": 5
+ },
+ {
+  "w": "A",
+  "start": 12.601,
+  "end": 12.941,
+  "line": 6
+ },
+ {
+  "w": "mirror",
+  "start": 12.941,
+  "end": 13.181,
+  "line": 6
+ },
+ {
+  "w": "that",
+  "start": 13.181,
+  "end": 13.421,
+  "line": 6
+ },
+ {
+  "w": "replays",
+  "start": 13.421,
+  "end": 14.061,
+  "line": 6
+ },
+ {
+  "w": "every",
+  "start": 14.061,
+  "end": 14.361,
+  "line": 6
+ },
+ {
+  "w": "lie",
+  "start": 14.361,
+  "end": 14.681,
+  "line": 6
+ },
+ {
+  "w": "you",
+  "start": 14.681,
+  "end": 14.861,
+  "line": 6
+ },
+ {
+  "w": "ever",
+  "start": 14.861,
+  "end": 15.061,
+  "line": 6
+ },
+ {
+  "w": "told.",
+  "start": 15.061,
+  "end": 15.441,
+  "line": 6
+ },
+ {
+  "w": "Serve",
+  "start": 15.557,
+  "end": 16.017,
+  "line": 7
+ },
+ {
+  "w": "your",
+  "start": 16.017,
+  "end": 16.177,
+  "line": 7
+ },
+ {
+  "w": "time",
+  "start": 16.177,
+  "end": 16.517,
+  "line": 7
+ },
+ {
+  "w": "across",
+  "start": 16.517,
+  "end": 16.837,
+  "line": 7
+ },
+ {
+  "w": "the",
+  "start": 16.837,
+  "end": 17.097,
+  "line": 7
+ },
+ {
+  "w": "last",
+  "start": 17.097,
+  "end": 17.337,
+  "line": 7
+ },
+ {
+  "w": "bridge.",
+  "start": 17.337,
+  "end": 17.717,
+  "line": 7
+ },
+ {
+  "w": "An",
+  "start": 17.822,
+  "end": 18.162,
+  "line": 8
+ },
+ {
+  "w": "old",
+  "start": 18.162,
+  "end": 18.322,
+  "line": 8
+ },
+ {
+  "w": "woman",
+  "start": 18.322,
+  "end": 18.602,
+  "line": 8
+ },
+ {
+  "w": "hands",
+  "start": 18.602,
+  "end": 18.962,
+  "line": 8
+ },
+ {
+  "w": "you",
+  "start": 18.962,
+  "end": 19.162,
+  "line": 8
+ },
+ {
+  "w": "a",
+  "start": 19.162,
+  "end": 19.262,
+  "line": 8
+ },
+ {
+  "w": "bowl",
+  "start": 19.262,
+  "end": 19.522,
+  "line": 8
+ },
+ {
+  "w": "of",
+  "start": 19.522,
+  "end": 19.682,
+  "line": 8
+ },
+ {
+  "w": "soup.",
+  "start": 19.682,
+  "end": 19.962,
+  "line": 8
+ },
+ {
+  "w": "One",
+  "start": 20.064,
+  "end": 20.544,
+  "line": 9
+ },
+ {
+  "w": "sip",
+  "start": 20.544,
+  "end": 20.864,
+  "line": 9
+ },
+ {
+  "w": "and",
+  "start": 20.864,
+  "end": 21.124,
+  "line": 9
+ },
+ {
+  "w": "you",
+  "start": 21.124,
+  "end": 21.224,
+  "line": 9
+ },
+ {
+  "w": "forget",
+  "start": 21.224,
+  "end": 21.584,
+  "line": 9
+ },
+ {
+  "w": "everything.",
+  "start": 21.584,
+  "end": 22.104,
+  "line": 9
+ },
+ {
+  "w": "So",
+  "start": 22.221,
+  "end": 22.701,
+  "line": 10
+ },
+ {
+  "w": "do",
+  "start": 22.701,
+  "end": 22.941,
+  "line": 10
+ },
+ {
+  "w": "you",
+  "start": 22.941,
+  "end": 23.061,
+  "line": 10
+ },
+ {
+  "w": "drink",
+  "start": 23.061,
+  "end": 23.321,
+  "line": 10
+ }
+]
