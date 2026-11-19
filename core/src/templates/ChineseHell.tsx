@@ -26,10 +26,12 @@ type Wd = { w: string; start: number; end: number; line: number };
 type Ln = { i: number; start: number; end: number; text: string };
 const W = words as Wd[];
 const L = lines as Ln[];
-const at = (i: number) => L[i].start;
+// beat times (s) from the am_puck voice-over: door, escorts, pair, fire, office, courts, mirror, bridge, soup, sip, drink
+const AT = [0.4, 1.9, 4.8, 7.95, 9.2, 11.19, 14.0, 17.46, 19.32, 20.6, 23.88];
+const at = (i: number) => AT[i];
 
 // scenes: [start, end] with 0.5 s cross-fades
-const SC = { door: [0, 4.4], pair: [4.4, 7.1], fire: [7.1, 8.8], office: [8.8, 12.8], mirror: [12.8, 15.75], bridge: [15.75, 18.05], soup: [18.05, 22.4], end: [22.4, 25] } as const;
+const SC = { door: [0, 4.7], pair: [4.7, 7.85], fire: [7.85, 9.15], office: [9.15, 13.85], mirror: [13.85, 17.35], bridge: [17.35, 19.25], soup: [19.25, 23.6], end: [23.6, 25] } as const;
 
 const Scene: React.FC<{ t: number; r: readonly [number, number]; children: (k: number, u: number) => React.ReactNode; push?: number }> = ({ t, r, children, push = 0.06 }) => {
   const [a, b] = r;
@@ -129,13 +131,19 @@ const Captions: React.FC<{ t: number }> = ({ t }) => {
   const wsAsr = W.filter((w) => w.line === ln.i);
   const toks = ln.text.split(" ");
   const ws = toks.map((w, i) => ({ w, start: toks.length === wsAsr.length ? wsAsr[i].start : ln.start + (i / toks.length) * (ln.end - ln.start) }));
+  // long lines: show only the sentence being spoken
+  const sent: number[] = []; let si = 0;
+  ws.forEach((w, i) => { sent.push(si); if (/[.?!]$/.test(w.w) && i < ws.length - 1) si++; });
+  const curIdx = Math.max(0, ws.reduce((acc, w, i) => (t >= w.start ? i : acc), 0));
+  const curSent = ln.text.length > 60 ? sent[curIdx] : -1;
+  const shown = ws.map((w, i) => ({ ...w, i })).filter((w) => curSent < 0 || sent[w.i] === curSent);
   const k = p(t, ln.start - 0.05, ln.start + 0.2);
   return (
     <div style={{ position: "absolute", left: 160, right: 160, bottom: 70, textAlign: "center", fontFamily: SERIF, fontWeight: 700, fontSize: 56, opacity: k,
       textShadow: "0 3px 12px rgba(0,0,0,0.95), 0 0 2px #000" }}>
-      {ws.map((w, i) => {
+      {shown.map((w, j) => {
         const said = t >= w.start;
-        return <span key={i} style={{ color: said ? C.paper : "rgba(236,226,201,0.45)", transition: "none" }}>{w.w}{i < ws.length - 1 ? " " : ""}</span>;
+        return <span key={j} style={{ color: said ? C.paper : "rgba(236,226,201,0.45)" }}>{w.w}{j < shown.length - 1 ? " " : ""}</span>;
       })}
     </div>
   );
@@ -227,6 +235,7 @@ export const ChineseHell: React.FC = () => {
               </g>
             </svg>
             <Title text="10 COURTS" t={t} from={at(5) - 0.05} to={SC.office[1] + 0.3} x={330} y={440} size={70} color={C.gold} />
+            <Title text="NO ELEVATOR" t={t} from={12.6} to={SC.office[1] + 0.3} x={960} y={500} size={64} color={C.white} />
             <Title text="18 FLOORS" t={t} from={at(5) + 0.8} to={SC.office[1] + 0.3} x={1600} y={440} size={70} color={C.gold} />
           </>
         );
@@ -307,6 +316,7 @@ export const ChineseHell: React.FC = () => {
             </svg>
             <Brush text="孟婆汤" t={t} from={at(8) + 0.3} x={1560} y={180} size={110} color={C.paper} />
             <AbsoluteFill style={{ background: "#e8e2d6", opacity: forget * 0.95 }} />
+            <Title text="PASSWORD: ••••••••" t={t} from={22.6} to={SC.soup[1] + 0.2} y={470} size={60} color="#5a4b3a" />
           </>
         );
       }}</Scene>
@@ -323,7 +333,7 @@ export const ChineseHell: React.FC = () => {
               {[0, 1, 2].map((i) => <path key={i} d={`M${-50 + i * 50} -20 q-25 -50 0 -100 q25 -50 0 -100`} stroke="rgba(236,226,201,0.4)" strokeWidth={9} fill="none" strokeLinecap="round" transform={`translate(${Math.sin(t * 1.4 + i) * 8} 0)`} />)}
             </g>
           </svg>
-          <Title text="DO YOU DRINK?" t={t} from={at(10) + 0.5} to={HELL_SEC + 1} y={230} size={104} color={C.paper} />
+          <Title text="DO YOU DRINK?" t={t} from={at(10) - 0.15} to={HELL_SEC + 1} y={230} size={104} color={C.paper} />
         </>
       )}</Scene>
 
